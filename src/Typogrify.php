@@ -72,18 +72,6 @@ class Typogrify extends Plugin
     /**
      * @inheritdoc
      */
-    public function __construct($id, $parent = null, array $config = [])
-    {
-        $config['components'] = [
-            'typogrify' => TypogrifyService::class,
-        ];
-
-        parent::__construct($id, $parent, $config);
-    }
-
-    /**
-     * @inheritdoc
-     */
     public function init(): void
     {
         parent::init();
