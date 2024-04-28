@@ -1,11 +1,11 @@
 <?php
 /**
- * Typogrify plugin for Craft CMS 3.x
+ * Typogrify plugin for Craft CMS
  *
  * Typogrify prettifies your web typography by preventing ugly quotes and 'widows' and more
  *
  * @link      https://nystudio107.com/
- * @copyright Copyright (c) 2017 nystudio107
+ * @copyright Copyright (c) nystudio107
  */
 
 namespace nystudio107\typogrify;
