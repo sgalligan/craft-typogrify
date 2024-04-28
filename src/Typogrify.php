@@ -16,7 +16,6 @@ use craft\base\Plugin;
 use craft\web\twig\variables\CraftVariable;
 use nystudio107\typogrify\models\Settings;
 use nystudio107\typogrify\services\ServicesTrait;
-use nystudio107\typogrify\services\TypogrifyService;
 use nystudio107\typogrify\twigextensions\TypogrifyTwigExtension;
 use nystudio107\typogrify\variables\TypogrifyVariable;
 use yii\base\Event;
@@ -29,7 +28,6 @@ use yii\base\Event;
  * @since     1.0.0
  *
  * @property  Settings $settings
- * @property  TypogrifyService $typogrify
  */
 class Typogrify extends Plugin
 {
@@ -70,18 +68,6 @@ class Typogrify extends Plugin
 
     // Public Methods
     // =========================================================================
-
-    /**
-     * @inheritdoc
-     */
-    public function __construct($id, $parent = null, array $config = [])
-    {
-        $config['components'] = [
-            'typogrify' => TypogrifyService::class,
-        ];
-
-        parent::__construct($id, $parent, $config);
-    }
 
     /**
      * @inheritdoc
