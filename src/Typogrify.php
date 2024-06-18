@@ -1,11 +1,11 @@
 <?php
 /**
- * Typogrify plugin for Craft CMS 3.x
+ * Typogrify plugin for Craft CMS
  *
  * Typogrify prettifies your web typography by preventing ugly quotes and 'widows' and more
  *
  * @link      https://nystudio107.com/
- * @copyright Copyright (c) 2017 nystudio107
+ * @copyright Copyright (c) nystudio107
  */
 
 namespace nystudio107\typogrify;
@@ -14,11 +14,9 @@ use Craft;
 use craft\base\Plugin;
 use craft\web\twig\variables\CraftVariable;
 use nystudio107\typogrify\models\Settings;
-
-use nystudio107\typogrify\services\TypogrifyService;
+use nystudio107\typogrify\services\ServicesTrait;
 use nystudio107\typogrify\twigextensions\TypogrifyTwigExtension;
 use nystudio107\typogrify\variables\TypogrifyVariable;
-
 use yii\base\Event;
 
 /**
@@ -28,12 +26,16 @@ use yii\base\Event;
  * @package   Typogrify
  * @since     1.0.0
  *
- * @property  Settings         $settings
- * @property  TypogrifyService $typogrify
+ * @property  Settings $settings
  * @method    Settings         getSettings()
  */
 class Typogrify extends Plugin
 {
+    // Traits
+    // =========================================================================
+
+    use ServicesTrait;
+
     // Static Properties
     // =========================================================================
 
