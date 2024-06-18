@@ -1,5 +1,9 @@
 # Typogrify Changelog
 
+## 4.0.4 - 2024.06.18
+### Added
+* Added `ServicesTrait` for the plugin service component registration
+
 ## 4.0.3 - 2024.03.27
 ### Fixed
 * Fixed a regression that happened when modernizing the `default_escape` functionality ([#86](https://github.com/nystudio107/craft-typogrify/issues/86))
