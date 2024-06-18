@@ -1,6 +1,6 @@
 # Typogrify Changelog
 
-## 4.0.4 - UNRELEASED
+## 4.0.4 - 2024.06.18
 ### Added
 * Added `ServicesTrait` for the plugin service component registration
 
