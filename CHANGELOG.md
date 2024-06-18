@@ -1,6 +1,6 @@
 # Typogrify Changelog
 
-## 5.0.1 - UNRELEASED
+## 5.0.1 - 2024.06.18
 ### Added
 * Added `ServicesTrait` for the plugin service component registration
 
