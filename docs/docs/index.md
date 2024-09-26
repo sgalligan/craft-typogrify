@@ -131,9 +131,9 @@ Or:
 Or:
 
 ```twig
-{% filter typogrifyFeed %}
+{% apply typogrifyFeed %}
     <p>Your text here</p>
-{% endfilter %}
+{% endapply %}
 
 ```
 
