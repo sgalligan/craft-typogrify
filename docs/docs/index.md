@@ -68,9 +68,9 @@ Or:
 Or:
 
 ```twig
-{% filter typogrify %}
+{% apply typogrify %}
     <p>Your text here</p>
-{% endfilter %}
+{% endapply %}
 
 ```
 
@@ -131,9 +131,9 @@ Or:
 Or:
 
 ```twig
-{% filter typogrifyFeed %}
+{% apply typogrifyFeed %}
     <p>Your text here</p>
-{% endfilter %}
+{% endapply %}
 
 ```
 
@@ -189,9 +189,9 @@ Usage:
 Or:
 
 ```twig
-{% filter smartypants %}
+{% apply smartypants %}
     <p>Your text here</p>
-{% endfilter %}
+{% endapply %}
 ```
 
 Or:
@@ -447,9 +447,9 @@ Usage:
 Or:
 
 ```twig
-{% filter transliterate %}
+{% apply transliterate %}
     <p>Your text here</p>
-{% endfilter %}
+{% endapply %}
 ```
 
 Or:
